@@ -1,9 +1,8 @@
 require "sinatra"
 require "sinatra/reloader"
 
+exchange_api=ENV.fetch("EXCHANGE_KEY")
+
 get("/") do
-  "
-  <h1>Welcome to your Sinatra App!</h1>
-  <p>Define some routes in app.rb</p>
-  "
+ erb(:homepage)
 end
